@@ -1,0 +1,43 @@
+
+
+<!-- <div *ngFor = 'let user of users  | paginate: { itemsPerPage: 10, currentPage: p }'>
+    <h2>{{user.username}}</h2>
+    <h4>{{user.email}}</h4>
+    <p>{{user.description}}</p>
+</div> -->
+
+<!-- <ul>
+    <li *ngFor="let user of users | paginate: { itemsPerPage: 10, currentPage: p }">{{ item }}</li>
+</ul> -->
+<!-- 
+<pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+
+
+
+<main>
+    <div class="center-alignment">
+ <p>Users Lists</p>
+    </div>
+    <div class="center-alignment">
+        <table>
+            <tr>
+              <th>User name</th>
+              <th>Email</th>
+              <th>Description</th>
+            </tr>
+            <tr *ngFor = 'let user of users  | paginate: { itemsPerPage: 10, currentPage: p }'>
+              <td>{{user.username}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.description}}</td>
+            </tr>
+          </table>
+    </div>
+    <div class="center-alignment">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+    
+  
+  </main>
+
+
+  

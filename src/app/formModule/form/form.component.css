@@ -1,0 +1,10 @@
+button.btn.btn-danger.adjust-space {
+    margin-left: 45px;
+}
+.jumbotron{
+    padding: 1rem 2rem !important;
+}
+.align-adjust {
+        display: flex;
+        justify-content: center;
+      }
