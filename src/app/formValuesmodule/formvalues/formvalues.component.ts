@@ -12,4 +12,8 @@ export class FormvaluesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submit(){
+    console.log(this.userValues); //here you will get the values of user registered in the form that comes with @input form values.
+  }
+
 }
